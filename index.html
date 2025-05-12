@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="boutton2.css">
+    <script src="loader.js" defer></script>
+    <title>Mes projets</title>
+</head>
+<body>
+    <header>
+        <a href="contact.html" class="header">ME CONTACTER</a>
+        <a href="index.html" class="header">MES PROJETS</a>
+    </header>
+
+    <!-- Loader -->
+    <div id="loader" class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control close"></div>
+                <div class="control minimize"></div>
+                <div class="control maximize"></div>
+            </div>
+        </div>
+        <div class="text">Loading...</div>
+    </div>
+
+    <!-- Contenu principal (masqué au début) -->
+    <div id="main-content" style="display: none;">
+        <div class="container">
+            <div class="hole3"></div>
+            <! écran d'acceuil !>
+            <div class="triangle-code"></div>
+            <img src="Images/triangle1.svg" class="triangle1" alt="triangle acceuil">
+            <h1 class="name">Lili-Jeanne<br>Flourez</h1>
+            <div class="rond"></div>
+            <img src="Images/LJ.png" class="my-picture">
+            
+            <!-- cercles -->
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <a href="about.html" class="about-me">Découvrez<br>moi !</a>
+            
+            <!-- Salle d'attente -->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <p class="waiting2">Salle d'attente</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="loader.html" class="waiting">Cliquez ici</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- projets -->
+            <img src="Images/triangle2.svg" class="triangle2" alt="triangle projet">
+            <div class="hole"></div>
+            <div class="hole2"></div>
+            <h1 class="titre-project"> -> MES PROJETS !</h1>
+            <section class="mot-doux">
+                <h3 class="mot-doux-titre">Packshot photo</h3>
+                <p class="mot-doux-texte">Un packshot en 1 semaine avec une pâtisserie pour promouvoir une gamme de gâteaux secs.<br><br>Utilisez les flèches directionnelles pour voir les photos </p>
+                <img class="mot-doux-photo" class="maRose" src="Images/Affiche_mot_doux.webp">
+                <img class="mot-doux-photo" class="maRose1" src="Images/Photo_mot_doux_2.webp">    
+            </section>
+    
+            <section class="capc">
+                <h3 class="capc-titre">Developpement web</h3>
+                <p class="capc-texte">Faire une maquette figma en 4 jours pour ensuite la coder en 3 jours, voici le défi de ce projet !</p>
+                <a href="https://capc-mmi.netlify.app/" class="capc-lien" target="blank">-> Lien du site</a>
+                <img class="capc-photo" src="Images/CAPC.webp">          
+            </section>
+            
+            <section class="motion">
+                <h3 class="motion-titre">Motion Desgin</h3>
+                <p class="motion-texte">Un motion design pour expliquer une théorie en communication.</p>
+                <a href="https://youtu.be/XV-_CqW8hVU" class="motion-lien" target="blank">-> Lien de la vidéo</a>
+                <img class="motion-photo" src="Images/motion.webp">
+            </section>
+            <div class="triangle3"></div>
+        </div>
+    </div>
+    <script src="caroussel.js"></script>
+</body>
+</html>

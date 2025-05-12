@@ -1,0 +1,405 @@
+/** Général **/
+html{
+    cursor: url('Images/arrowhead-rounded-outline.svg') 0 0,auto;
+}
+
+body{
+    background-color: #FFDAB7;
+    overflow-x: hidden;
+}
+
+.container{ /** Grille principale **/
+    display: grid;
+    grid-template-rows: 1fr; /** hauteur **/
+    grid-template-columns:1.5fr 1fr; /** largeur **/
+}
+
+
+
+/** Police d'écriture **/
+@font-face { /** Import **/
+    font-family: 'JetBrains Mono';
+    src: url('JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face { /** Import **/
+    font-family: 'JetBrains MonoNormal';
+    src: url('JetBrainsMono-Light.woff2') format('woff2');
+    font-style: normal;
+}
+
+h1 {
+    /* H1 */
+    font-family: "JetBrains Mono";
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+h3 {
+    /* H1 */
+    font-family: "JetBrains Mono";
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+p{
+    /* P */
+    font-family: "JetBrains MonoNormal";
+    font-size: 2vw;
+    font-style: normal;
+    line-height: normal;    
+}
+
+
+
+/** Page du haut **/
+.name{ /** Lili-Jeanne Flourez **/
+    grid-area: 1 / 1 / 1 / 1;  /** Placement sur la grille **/
+    justify-self:center;
+    align-self: center;
+    text-align:center ;
+    color: white;
+    z-index: 5;
+    margin-bottom: 50%;
+    margin-right: 9%;
+}
+
+.my-picture{ /** Ma photo **/
+    grid-area: 1 / 2 / 1 / 2; /** row-start ; col-start ; row-end ; col-end **/
+    justify-self: center;
+    align-self: flex-end;
+    width: 90%;
+    margin-right: 35%;
+    margin-bottom: 10%;
+}
+
+.circle{ /** cercle du Découvrez-moi avec fond rose**/
+    grid-area: 1 / 1 / 1 / 1;
+    justify-self: center;
+    align-self: flex-end;
+    display: flex;
+    position: relative;
+    background:#FFDAB7;
+    border-radius:50%;
+    width: 30vw;
+    height: 30vw;
+    margin-right: 15%;
+    border:3px solid #CB9F73; 
+}
+
+.circle2{ /** cercle du Découvrez-moi sans fond rose**/
+    justify-self: center;
+    align-self: flex-end;
+    grid-area: 1 / 1 / 1 / 1;
+    display: flex;
+    position: relative;
+    background: none;
+    border-radius:50%;
+    width: 30vw;
+    height: 30vw;
+    border:3px solid #CB9F73; 
+    margin-bottom: -2%;
+    margin-right: 12%;
+}
+
+
+.about-me{ /** Contenu du cercle Découvrez-moi**/
+    grid-area: 1 / 1 / 1 / 1;
+    display: grid;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    z-index: 100;
+    align-self: flex-end;
+    margin-left: 24%;
+    margin-bottom: 13%;
+    /** Police et taille du texte**/
+    font-family: "JetBrains Mono";
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; 
+}
+
+.triangle1 {
+    position: absolute;
+    margin-top: -17vw;
+    left: -9%;
+    width: 70vw;
+}
+
+
+.triangle2{
+    position: absolute;
+    justify-content: center;
+    width: 105vw;
+    top: 85vw;
+    left: -5%;
+}
+
+/** Header de la page**/
+.header{ 
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 3;
+    border: solid;
+    border-color: white;
+    border-radius: 20px;
+}
+
+header a{
+    /* H4 */
+    font-family: "JetBrains Mono";
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/** Contenu de la page projet **/
+.titre-project{ /** Titre de la page **/
+    display: grid;
+    grid-area: 2/1/-1/-1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    z-index: 50;
+    margin-bottom: 50vw;
+    margin-left: 27vw;
+    background-color:#FFDAB7;
+    border-radius: 20px;
+}
+
+
+.p1{
+    display: flex;
+    position: relative;
+}
+
+
+.triangle3 { /** Triangle de la page (fond) **/
+    display: grid;
+    grid-area: 3/1/3/3;
+    justify-self: center;
+    align-self: center;
+    width: 90vw;
+    height: 120vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: rotate(60deg);
+    border-radius: 106px;
+    z-index: 0;
+    margin-top: -40vw;
+}
+
+
+.hole{ /** Couleur de fond de la page **/
+    display: grid;
+    grid-area: -1/1/-1/-1;
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 50vw;
+    height: 70vw;
+    margin-right: -7vw;
+}
+
+.hole2{ /** Couleur fond de la page **/
+    display: grid;
+    grid-area: -1/1/-1/1;
+    justify-self: flex-start;
+    align-self: flex-end;
+    width: 70vw;
+    height: 40vw;
+    margin-left: -2vw;
+}
+
+/** Mot Doux **/
+.mot-doux{ /** Grille projet mot doux **/
+    display: grid;
+    grid-area: 2/1/2/-1;  /** row-start ; col-start ; row-end ; col-end **/
+    border-radius: 50px;
+    width: 70%;
+    height: 35vw;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FFDAB7;
+    z-index: 50;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120vw;
+}
+
+.mot-doux-photo{ /** Photos projet mot doux **/
+    width: 85%;
+    height: auto;
+    border-radius: 50px;
+    grid-area: 2/2/-2/1;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.mot-doux-titre{ /** Titre projet mot doux **/
+    margin-top: 25vw;
+    color: white;
+    align-self: flex-start;
+    justify-self: flex-start;    
+}
+
+.mot-doux-texte{ /** Texte projet mot doux **/
+    color: white;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-bottom: 25vw;
+}
+
+
+/** CAPC **/
+.capc{ /** Grille projet CAPC **/
+    display: grid;
+    grid-area: 2/1/2/-1;  /** row-start ; col-start ; row-end ; col-end **/
+    border-radius: 50px;
+    width: 80%;
+    height: 35vw;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FFDAB7;
+    z-index: 50;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25vw;
+}
+
+.capc-lien{
+    display: grid;
+    color: white;
+    align-self: center;
+    justify-self: flex-start;
+    grid-area: -2/1/2/1;
+    text-decoration: none;
+    margin-top: 18vw;
+    margin-left:4.5vw;
+    
+    font-family: "JetBrains MonoNormal";
+    font-size: 2vw;
+    font-style: normal;
+    line-height: normal;
+}
+
+.capc-photo{ /** Photos projet CAPC **/
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    grid-area: 2/2/-2/-1;
+    align-self: center;
+    justify-self: center;
+}
+
+.capc-titre{ /** Titre projet CAPC **/
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: -0.1vw;
+    color: white;
+    margin-left: 3.6vw;
+    grid-area: -2/1/-2/2;
+}
+
+.capc-texte{ /** Texte projet CAPC **/
+    color: white;
+    align-self: center;
+    justify-self: center;
+    margin-left: 4vw;
+    grid-area: -2/1/2/1;
+    margin-bottom: 8vw;
+}
+
+
+
+/** Motion **/
+.motion{ /** Grille projet motion **/
+    display: grid;
+    grid-area: 3/1/3/-1;  /** row-start ; col-start ; row-end ; col-end **/
+    border-radius: 50px;
+    width: 80%;
+    height: 35vw;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #FFDAB7;
+    z-index: 50;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -25vw;
+}
+
+.motion-lien{
+    display: grid;
+    color: white;
+    align-self: center;
+    justify-self: flex-start;
+    grid-area: -2/1/2/1;
+    text-decoration: none;
+    margin-top: 18vw;
+    margin-left:4.5vw;
+    
+    font-family: "JetBrains MonoNormal";
+    font-size: 2vw;
+    font-style: normal;
+    line-height: normal;
+}
+
+.motion-photo{ /** Photos projet motion **/
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    grid-area: 2/2/-2/-1;
+    align-self: center;
+    justify-self: center;
+}
+
+.motion-titre{ /** Titre projet motion **/
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: -0.1vw;
+    color: white;
+    margin-left: 3.6vw;
+    grid-area: -2/1/-2/2;
+    margin-left: 5vw;
+}
+
+.motion-texte{ /** Texte projet motion **/
+    color: white;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 5vw;
+    grid-area: -2/1/2/1;
+    margin-bottom: 8vw;
+}
