@@ -815,8 +815,8 @@ img {
 }
 
 .conteneur-image-section-quatre img {
-    max-width: 300px; /* Remplacez par la largeur souhaitée */
-    max-height: 200px; /* Remplacez par la hauteur souhaitée */
+    max-width: 50vw; /* Remplacez par la largeur souhaitée */
+    max-height: 80vh; /* Remplacez par la hauteur souhaitée */
     width: auto;
     height: auto;
 }
