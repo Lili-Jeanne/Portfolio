@@ -360,6 +360,10 @@ header a{
     margin-top: -25vw;
 }
 
+.git {
+    text-shadow: 0px;
+}
+
 .motion-lien{
     margin: 100px;
     display: grid;
